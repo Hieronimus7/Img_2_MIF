@@ -11,7 +11,6 @@ rgbVals = [""]*len(pix_val)
 
 for x in range(0,len(pix_val)):
     temp = bin(0)
-    print(pix_val[0])
     for t in range(0,3):
         if t == 2:
             temp = bin((int(temp[2:],2)<<2) + (int(pix_val[x][t])>>6))
